@@ -1,0 +1,60 @@
+{
+ "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"1ee2699d17\"}, {\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"d495d43ab7\"}, {\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"0c17ed18f0\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-03 00:50:54.787010",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "machine_id",
+  "machine_hostname",
+  "machine_ip",
+  "headscale_machine",
+  "machine_ipv6"
+ ],
+ "fields": [
+  {
+   "fetch_from": "headscale_machine.machine_id",
+   "fieldname": "machine_id",
+   "fieldtype": "Int",
+   "label": "Machine ID"
+  },
+  {
+   "fetch_from": "headscale_machine.machine_hostname",
+   "fieldname": "machine_hostname",
+   "fieldtype": "Data",
+   "label": "Machine Hostname"
+  },
+  {
+   "fetch_from": "headscale_machine.machine_ip",
+   "fieldname": "machine_ip",
+   "fieldtype": "Data",
+   "label": "Machine IP"
+  },
+  {
+   "fieldname": "headscale_machine",
+   "fieldtype": "Link",
+   "label": "HeadScale Machine",
+   "options": "HeadScale Machine"
+  },
+  {
+   "fetch_from": "headscale_machine.machine_ipv6",
+   "fieldname": "machine_ipv6",
+   "fieldtype": "Data",
+   "label": "Machine IPv6"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-03 01:57:25.915724",
+ "modified_by": "Administrator",
+ "module": "Headscale",
+ "name": "Headscale Machines",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

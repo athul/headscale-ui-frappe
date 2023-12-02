@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{machine_name}",
+ "creation": "2023-12-03 00:57:03.280758",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "machine_id",
+  "machine_name",
+  "machine_hostname",
+  "column_break_lawc",
+  "machine_status",
+  "machine_key",
+  "machine_user",
+  "machine_networks_section",
+  "machine_ip",
+  "machine_ipv6"
+ ],
+ "fields": [
+  {
+   "fieldname": "machine_id",
+   "fieldtype": "Data",
+   "label": "Machine ID"
+  },
+  {
+   "fieldname": "machine_name",
+   "fieldtype": "Data",
+   "label": "Machine Name"
+  },
+  {
+   "fieldname": "machine_hostname",
+   "fieldtype": "Data",
+   "label": "Machine Hostname"
+  },
+  {
+   "fieldname": "column_break_lawc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Online",
+   "fieldname": "machine_status",
+   "fieldtype": "Select",
+   "label": "Machine Status",
+   "options": "Online\nOffline"
+  },
+  {
+   "fieldname": "machine_key",
+   "fieldtype": "Data",
+   "label": "Machine Key"
+  },
+  {
+   "fieldname": "machine_user",
+   "fieldtype": "Link",
+   "label": "Machine User",
+   "options": "HeadScale User"
+  },
+  {
+   "fieldname": "machine_networks_section",
+   "fieldtype": "Section Break",
+   "label": "Machine Networks"
+  },
+  {
+   "fieldname": "machine_ip",
+   "fieldtype": "Data",
+   "label": "Machine IP"
+  },
+  {
+   "fieldname": "machine_ipv6",
+   "fieldtype": "Data",
+   "label": "Machine IPv6"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-03 02:04:42.205115",
+ "modified_by": "Administrator",
+ "module": "Headscale",
+ "name": "HeadScale Machine",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
